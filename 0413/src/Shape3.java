@@ -1,0 +1,47 @@
+public class Shape3 {
+
+	protected int x, y;
+
+	public void draw() {
+		System.out.println("Shape Draw");
+	}
+}
+
+class Rectangle extends Shape3 {
+	private int width, height;
+
+	public void draw() {
+		System.out.println("Rectangle Draw");
+	}
+}
+	class Triangle extends Shape3 {
+		private int base, height;
+
+		public void draw() {
+			System.out.println("Triangle Draw");
+		}
+	}
+		class Circle extends Shape3 {
+			private int radius;
+
+			public void draw() {
+				System.out.println("Circle Draw");
+			}
+		}
+	class ShapeTest{	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Shape3 s1,s2,s3,s4;
+
+s1=new Shape3();
+s2=new Rectangle();
+s3=new Triangle();
+s4=new Circle();
+
+s1.draw();
+s2.draw();
+s3.draw();
+s4.draw();
+	}
+
+}
