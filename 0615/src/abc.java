@@ -1,10 +1,12 @@
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Vector;
 
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -17,6 +19,12 @@ public class abc {
 		mygui() {
 			JPanel panel = new JPanel();
 			setTitle("Á¦¸ñ");
+
+			JLabel jlName, jlKor, jlEng, jlMat;
+			JTextField jtName, jtKor, jtEng, jtMat;
+			JButton jbAdd, jbDel, jbChange;
+			JTable table;
+			Vector data, col;
 
 			setSize(800, 500);
 
@@ -90,10 +98,9 @@ public class abc {
 				}
 			});
 
-			add(panel,BorderLayout.WEST);
+			add(panel, BorderLayout.WEST);
 			add(scp, BorderLayout.EAST);
 
-		
 			panel.add(neww);
 			panel.add(delete);
 			panel.add(re);
